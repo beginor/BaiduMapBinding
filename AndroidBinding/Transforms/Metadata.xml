@@ -1,10 +1,44 @@
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  <!--
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='v']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.search']/interface[@name='a.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.vi']/class[@name='c']" name="obfuscated">false</attr>
   -->
-  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">Version</attr>
+  <remove-node path="/api/package[@name='com.baidu.mapapi.cloud']/class[string-length (@name) = 1]" />
+  <remove-node path="/api/package[@name='com.baidu.mapapi.search']/class[@name = 'PlaceCaterActivity']" />
+  <remove-node path="/api/package[@name='com.baidu.vi']/class[@name = 'VDeviceAPI']" />
+  <remove-node path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name = 'y']" />
+  <remove-node path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name = 'd']/method[@name='a' and count(parameter)=2]" />
+  <remove-node path="/api/package[@name='com.baidu.mapapi.map']/class[@name = 'MapView']/method[@name='getZoomControls']" />
+  <remove-node path="/api/package[@name='com.baidu.mapapi.map']/class[@name = 'MapView.LayoutParams']" />
+  
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='d']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='d']" name="managedName">InnerOverlay</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='v']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='v']" name="managedName">Overlay</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='A']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='A']" name="managedName">TransitOverlay</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.map']/class[@name='A']" name="extends">java.lang.Object</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']" name="managedName">PermissionCheckResult</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']/field[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']/field[@name='a']" name="managedName">property_a</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']/field[@name='b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/class[@name='PermissionCheck.a']/field[@name='b']" name="managedName">property_b</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/interface[@name='PermissionCheck.b']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.utils']/interface[@name='PermissionCheck.b']" name="managedName">IPermissionCheckResultListener</attr>
+
+  <!--<attr path="/api/package[@name='com.baidu.mapapi.search']/class[@name='MKSearch']/field[@name='POI_DETAIL_SEARCH']" name="managedName">PointDetailSearch</attr>-->
+  <attr path="/api/package[@name='com.baidu.mapapi.search']/class[@name='MKSearch']/method[@name='poiDetailSearch']" name="managedName">PointDetailSearch</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='LocationData']/method[@name='clone']" name="managedName">DeepClone</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']" name="managedName">VERSION_INFO</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_DESC']" name="managedName">VERSION_DESC</attr>
+  
+  <!--<attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='MapView']/method[@name='getZoomControls']" name="deprecated"></attr>-->
+  <!--<attr path="/api/package[@name='Com.Baidu.Mapapi']/class[@name='VersionInfo']/method[@name='clone']" name="visibility">protected</attr>-->
 </metadata>
+  

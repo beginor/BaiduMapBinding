@@ -1,12 +1,15 @@
 using System;
+using System.Collections.Generic;
+using System.Text;
+using Object = Java.Lang.Object;
 
-namespace Binding
+namespace Com.Baidu.Mapapi.Map
 {
-	public class ItemizedOverlay
+	public partial class ItemizedOverlay
 	{
-		public ItemizedOverlay ()
+		public int Compare(Object left, Object right)
 		{
+			return left.GetHashCode() - right.GetHashCode();
 		}
 	}
 }
-
