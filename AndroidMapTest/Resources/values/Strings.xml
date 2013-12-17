@@ -2,4 +2,5 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">BaiduMapTest</string>
+	<string name="baidu_map_api_key"></string>
 </resources>
